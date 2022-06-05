@@ -39,6 +39,11 @@
   margin: 24px;
 }
 
+.subTitle {
+  margin: 24px;
+  color: var(--blue3);
+}
+
 .labels {
   font-size: 1.7rem;
 }
@@ -46,7 +51,6 @@
 .input {
   margin: 8px;
   padding: 8px;
-  /* border: none; */
   outline: var(--blue3);
 }
 

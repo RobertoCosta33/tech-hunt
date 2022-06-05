@@ -23,8 +23,8 @@ export const AppendChilds = () => {
   const resolution = SetInnerTexts().resolution;
   const restartButton = SetInnerTexts().restartButton;
 
-  let randomNumber = 3;
-  let chances = [1, 2, 3];
+  const randomNumber = [];
+  const chances = [1, 2, 3];
 
   easyButtonEvent(
     easyButton,
@@ -34,7 +34,8 @@ export const AppendChilds = () => {
     app,
     startButton,
     inputContainer,
-    subTitle
+    subTitle,
+    randomNumber
   );
   mediumButtonEvent(
     easyButton,
@@ -60,7 +61,7 @@ export const AppendChilds = () => {
   startButton.addEventListener("click", () => {
     isEquals(
       Number(input.value),
-      randomNumber,
+      randomNumber[0],
       resolution,
       app,
       startButton,
@@ -71,7 +72,7 @@ export const AppendChilds = () => {
 
     gameOver(
       Number(input.value),
-      randomNumber,
+      randomNumber[0],
       chances,
       resolution,
       app,

@@ -6,11 +6,14 @@ export const easyButtonEvent = (
   app,
   startButton,
   inputContainer,
-  subTitle
+  subTitle,
+  randomNumber
 ) => {
   easyButton.addEventListener("click", () => {
     const difficult = 11;
-    const randomNumber = parseInt(Number(Math.random() * difficult));
+    const number = parseInt(Number(Math.random() * difficult));
+
+    randomNumber.push(number);
 
     console.log("easy >>>", randomNumber);
 
