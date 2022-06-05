@@ -10,7 +10,6 @@ import {
 
 export const AppendChilds = () => {
   const app = document.getElementById("root");
-  const title = SetInnerTexts().title;
   const subTitle = SetInnerTexts().subTitle;
   const inputContainer = SetInnerTexts().inputContainer;
   const inputLabel = SetInnerTexts().inputLabel;
@@ -94,7 +93,6 @@ export const AppendChilds = () => {
   difficultButtonsContainer.appendChild(easyButton);
   difficultButtonsContainer.appendChild(mediumButton);
   difficultButtonsContainer.appendChild(hardButton);
-  app.appendChild(title);
   app.appendChild(subTitle);
   app.appendChild(difficultButtonsContainer);
   app.appendChild(resolution);

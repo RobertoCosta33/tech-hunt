@@ -1,7 +1,6 @@
 import { CreateElements } from "./CreateElements.js";
 
 export const SetAttributes = () => {
-  const title = CreateElements().title;
   const subTitle = CreateElements().subTitle;
   const inputContainer = CreateElements().inputContainer;
   const input = CreateElements().input;
@@ -14,7 +13,6 @@ export const SetAttributes = () => {
   const resolution = CreateElements().resolution;
   const restartButton = CreateElements().restartButton;
 
-  title.classList.add("title");
   subTitle.classList.add("subTitle");
 
   inputContainer.classList.add("inputContainer");
@@ -22,8 +20,8 @@ export const SetAttributes = () => {
   inputLabel.setAttribute("for", "input");
   inputLabel.classList.add("labels");
 
-  input.classList.add("input");
-  input.setAttribute("name", "input");
+  input.classList.add("inputs");
+  input.setAttribute("id", "input");
   input.setAttribute("type", "number");
 
   startButton.classList.add("buttons");
@@ -44,7 +42,6 @@ export const SetAttributes = () => {
     input,
     startButton,
     inputContainer,
-    title,
     easyButton,
     mediumButton,
     hardButton,

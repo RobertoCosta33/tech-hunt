@@ -1,0 +1,75 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --green1: #4caf50;
+  --green2: #2e7d32;
+  --green3: #1b5e20;
+  --blue1: #42a5f5;
+  --blue2: #1976d2;
+  --blue3: #1565c0;
+  --purple1: #ba68c8;
+  --purple2: #9c27b0;
+  --purple3: #7b1fa2;
+  --orange1: #ff9800;
+  --orange2: #ed6c02;
+  --orange3: #e65100;
+  --error1: #ef5350;
+  --error2: #d32f2f;
+  --error3: #c62828;
+}
+
+.rootLogin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  flex-wrap: wrap;
+  text-align: center;
+  margin: 76px 25%;
+  padding: 16px;
+  max-width: 920px;
+}
+
+.container {
+  margin-top: 48px;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  width: 400px;
+}
+
+.loginButton {
+  margin: 24px 0 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--blue1);
+  color: #fff;
+  width: 400px;
+  padding: 10px 16px;
+  transition: 0.4s;
+}
+
+.loginButton:hover {
+  cursor: pointer;
+  box-shadow: 2px 2px 4px #ddd;
+  background-color: var(--blue3);
+}
+
+.loginLabels {
+  margin: 8px;
+  font-size: 1.2rem;
+}
+
+.inputsLogin {
+  margin-bottom: 16px;
+  font-size: 0.9rem;
+  text-align: center;
+  width: 400px;
+  padding: 10px 16px;
+}

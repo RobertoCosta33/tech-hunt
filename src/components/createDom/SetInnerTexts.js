@@ -1,7 +1,6 @@
 import { SetAttributes } from "./setAttributes.js";
 
 export const SetInnerTexts = () => {
-  const title = SetAttributes().title;
   const subTitle = SetAttributes().subTitle;
   const inputContainer = SetAttributes().inputContainer;
   const input = SetAttributes().input;
@@ -14,7 +13,6 @@ export const SetInnerTexts = () => {
   const resolution = SetAttributes().resolution;
   const restartButton = SetAttributes().restartButton;
 
-  title.innerText = "Bem Vindo!";
   subTitle.innerText = "Escolha a dificuldade para começar o jogo!";
   inputLabel.innerText = "Palpite: ";
   startButton.innerText = "Começar";
@@ -29,7 +27,6 @@ export const SetInnerTexts = () => {
     input,
     startButton,
     inputContainer,
-    title,
     easyButton,
     mediumButton,
     hardButton,
