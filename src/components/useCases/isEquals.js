@@ -1,3 +1,5 @@
+import { AppendChilds } from "../createDom/AppendChilds.js";
+
 export const isEquals = (
   value,
   randomNumber,
@@ -6,10 +8,11 @@ export const isEquals = (
   startButton,
   chances,
   restartButton,
-  inputContainer,
+  inputContainer
 ) => {
   const win = value === randomNumber;
-  const message = value > randomNumber ? "O número é menor!" : "O número é maior!";
+  const message =
+    value > randomNumber ? "O número é menor!" : "O número é maior!";
 
   if (win) {
     resolution.classList.remove("resolutionLoose");
@@ -23,7 +26,10 @@ export const isEquals = (
     app.removeChild(inputContainer);
 
     restartButton.addEventListener("click", () => {
-      document.location.reload(true);
+      // document.location.reload(true);
+      AppendChilds();
+      app.removeChild(resolution);
+      app.removeChild(restartButton);
     });
   } else {
     chances.pop();
