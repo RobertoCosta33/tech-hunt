@@ -1,5 +1,3 @@
-import { guessUpperOrLower } from "./guessUpperOrLower.js";
-
 export const isEquals = (
   value,
   randomNumber,
@@ -8,10 +6,10 @@ export const isEquals = (
   startButton,
   chances,
   restartButton,
-  inputContainer
+  inputContainer,
 ) => {
   const win = value === randomNumber;
-  const message = guessUpperOrLower().guessVerification;
+  const message = value > randomNumber ? "O número é menor!" : "O número é maior!";
 
   if (win) {
     resolution.classList.remove("resolutionLoose");
@@ -31,7 +29,5 @@ export const isEquals = (
     chances.pop();
     resolution.classList.add("resolutionLoose");
     resolution.innerText = `Resposta errada! ${message}  Você ainda tem ${chances.length} chances!`;
-
-    guessUpperOrLower(value, randomNumber);
   }
 };

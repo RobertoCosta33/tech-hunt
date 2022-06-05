@@ -69,7 +69,7 @@ export const AppendChilds = () => {
       startButton,
       chances,
       restartButton,
-      inputContainer
+      inputContainer,
     );
 
     gameOver(

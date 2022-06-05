@@ -24,11 +24,16 @@
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  flex-wrap: wrap;
   background-image: linear-gradient(to left, #ddd, #fff);
   text-align: center;
-  margin: 76px auto;
+  margin: 76px 25%;
   padding: 16px;
-  width: 920px;
+  max-width: 920px;
   border: 1px solid #000;
   border-radius: 10px;
   box-shadow: 2px 2px 4px #000;
@@ -41,11 +46,13 @@
 
 .subTitle {
   margin: 24px;
+  font-size: 1.7rem;
   color: var(--blue3);
 }
 
 .labels {
   font-size: 1.7rem;
+  color: var(--purple3);
 }
 
 .input {
@@ -121,4 +128,11 @@
 
 .restartButton:hover {
   background-color: var(--purple3);
+}
+
+@media (max-width: 480px) {
+  #root {
+    margin: 48px auto;
+    width: 248px;
+  }
 }
