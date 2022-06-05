@@ -1,4 +1,4 @@
-import { game } from "../../pages/game.js";
+import { game } from "../pages/game.js";
 
 export const isEquals = (
   value,
