@@ -112,7 +112,6 @@ export const game = () => {
     input.value = "";
   });
 
-  // app.appendChild(cardNumber);
   inputContainer.appendChild(inputLabel);
   inputContainer.appendChild(input);
   difficultButtonsContainer.appendChild(easyButton);

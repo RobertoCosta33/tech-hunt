@@ -43,6 +43,8 @@ export const login = () => {
   container.appendChild(spanPassword);
   container.appendChild(loginButton);
 
+  inputName.focus();
+
   loginButton.addEventListener("click", () => {
     if (inputName.value != "" && inputPassword.value != "") {
       app.classList.add("root");
