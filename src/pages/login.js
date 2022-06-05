@@ -32,6 +32,8 @@ export const login = () => {
   inputPassword.classList.add("inputsLogin");
   spanPassword.classList.add("span");
 
+  inputPassword.setAttribute("type", "password");
+
   app.appendChild(loginTitle);
   app.appendChild(container);
   container.appendChild(labelName);
