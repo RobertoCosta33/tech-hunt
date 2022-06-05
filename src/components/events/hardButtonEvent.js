@@ -6,11 +6,14 @@ export const hardButtonEvent = (
   app,
   startButton,
   inputContainer,
-  subTitle
+  subTitle,
+  randomNumber
 ) => {
   hardButton.addEventListener("click", () => {
     const difficult = 201;
-    const randomNumber = parseInt(Number(Math.random() * difficult));
+    const number = parseInt(Number(Math.random() * difficult));
+
+    randomNumber.push(number);
 
     console.log("hard >>>", randomNumber);
 

@@ -45,7 +45,8 @@ export const AppendChilds = () => {
     app,
     startButton,
     inputContainer,
-    subTitle
+    subTitle,
+    randomNumber
   );
   hardButtonEvent(
     easyButton,
@@ -55,7 +56,8 @@ export const AppendChilds = () => {
     app,
     startButton,
     inputContainer,
-    subTitle
+    subTitle,
+    randomNumber
   );
 
   startButton.addEventListener("click", () => {

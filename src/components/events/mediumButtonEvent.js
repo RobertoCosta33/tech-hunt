@@ -6,11 +6,14 @@ export const mediumButtonEvent = (
   app,
   startButton,
   inputContainer,
-  subTitle
+  subTitle,
+  randomNumber
 ) => {
   mediumButton.addEventListener("click", () => {
     const difficult = 101;
-    const randomNumber = parseInt(Number(Math.random() * difficult));
+    const number = parseInt(Number(Math.random() * difficult));
+
+    randomNumber.push(number);
 
     console.log("medium >>>", randomNumber);
 
