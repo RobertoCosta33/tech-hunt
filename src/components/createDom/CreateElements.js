@@ -1,6 +1,7 @@
 export const CreateElements = () => {
   const title = document.createElement("h1");
   const subTitle = document.createElement("h3");
+  const cardNumber = document.createElement("div");
   const inputContainer = document.createElement("div");
   const inputLabel = document.createElement("label");
   const input = document.createElement("input");
@@ -16,6 +17,7 @@ export const CreateElements = () => {
     inputLabel,
     input,
     startButton,
+    cardNumber,
     inputContainer,
     title,
     easyButton,

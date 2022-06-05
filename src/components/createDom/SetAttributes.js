@@ -2,6 +2,7 @@ import { CreateElements } from "./CreateElements.js";
 
 export const SetAttributes = () => {
   const subTitle = CreateElements().subTitle;
+  const cardNumber = CreateElements().cardNumber;
   const inputContainer = CreateElements().inputContainer;
   const input = CreateElements().input;
   const inputLabel = CreateElements().inputLabel;
@@ -26,6 +27,7 @@ export const SetAttributes = () => {
 
   startButton.classList.add("buttons");
   startButton.classList.add("startButton");
+  cardNumber.classList.add("cardNumber");
   difficultButtonsContainer.classList.add("difficultButtonsContainer");
   easyButton.classList.add("buttons");
   easyButton.classList.add("easyButton");
@@ -41,6 +43,7 @@ export const SetAttributes = () => {
     inputLabel,
     input,
     startButton,
+    cardNumber,
     inputContainer,
     easyButton,
     mediumButton,

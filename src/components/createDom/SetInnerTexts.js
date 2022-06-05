@@ -2,6 +2,7 @@ import { SetAttributes } from "./setAttributes.js";
 
 export const SetInnerTexts = () => {
   const subTitle = SetAttributes().subTitle;
+  const cardNumber = SetAttributes().cardNumber;
   const inputContainer = SetAttributes().inputContainer;
   const input = SetAttributes().input;
   const inputLabel = SetAttributes().inputLabel;
@@ -26,6 +27,7 @@ export const SetInnerTexts = () => {
     inputLabel,
     input,
     startButton,
+    cardNumber,
     inputContainer,
     easyButton,
     mediumButton,

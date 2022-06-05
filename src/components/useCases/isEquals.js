@@ -8,7 +8,8 @@ export const isEquals = (
   startButton,
   chances,
   restartButton,
-  inputContainer
+  inputContainer,
+  cardNumber
 ) => {
   const win = value === randomNumber;
   const message =
@@ -19,14 +20,20 @@ export const isEquals = (
     resolution.classList.add("resolution");
 
     resolution.innerText =
-      "Parabéns! Você adivinhou o número correto! \n Clique no botão iniciar para recomeçar!";
+      `Parabéns! Você adivinhou o número correto! \n Clique no botão iniciar para recomeçar! \n O número correto é: `;
 
+    cardNumber.innerText = randomNumber;
+    cardNumber.classList.remove("cardNumberClosed");
+    cardNumber.classList.add("cardNumber");
+
+    app.appendChild(cardNumber);
     app.removeChild(startButton);
     app.appendChild(restartButton);
     app.removeChild(inputContainer);
 
     restartButton.addEventListener("click", () => {
       AppendChilds();
+      app.removeChild(cardNumber);
       app.removeChild(resolution);
       app.removeChild(restartButton);
     });

@@ -11,6 +11,7 @@ import {
 export const AppendChilds = () => {
   const app = document.getElementById("root");
   const subTitle = SetInnerTexts().subTitle;
+  const cardNumber = SetInnerTexts().cardNumber;
   const inputContainer = SetInnerTexts().inputContainer;
   const inputLabel = SetInnerTexts().inputLabel;
   const input = SetInnerTexts().input;
@@ -34,7 +35,9 @@ export const AppendChilds = () => {
     startButton,
     inputContainer,
     subTitle,
-    randomNumber
+    randomNumber,
+    input,
+    cardNumber
   );
   mediumButtonEvent(
     easyButton,
@@ -45,7 +48,9 @@ export const AppendChilds = () => {
     startButton,
     inputContainer,
     subTitle,
-    randomNumber
+    randomNumber,
+    input,
+    cardNumber
   );
   hardButtonEvent(
     easyButton,
@@ -56,7 +61,9 @@ export const AppendChilds = () => {
     startButton,
     inputContainer,
     subTitle,
-    randomNumber
+    randomNumber,
+    input,
+    cardNumber
   );
 
   startButton.addEventListener("click", () => {
@@ -69,6 +76,7 @@ export const AppendChilds = () => {
       chances,
       restartButton,
       inputContainer,
+      cardNumber
     );
 
     gameOver(
@@ -79,7 +87,8 @@ export const AppendChilds = () => {
       app,
       startButton,
       restartButton,
-      inputContainer
+      inputContainer,
+      cardNumber
     );
 
     notANumber(input.value, chances, resolution);
@@ -88,6 +97,7 @@ export const AppendChilds = () => {
     input.value = "";
   });
 
+  // app.appendChild(cardNumber);
   inputContainer.appendChild(inputLabel);
   inputContainer.appendChild(input);
   difficultButtonsContainer.appendChild(easyButton);

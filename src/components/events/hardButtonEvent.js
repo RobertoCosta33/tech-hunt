@@ -7,7 +7,9 @@ export const hardButtonEvent = (
   startButton,
   inputContainer,
   subTitle,
-  randomNumber
+  randomNumber,
+  input,
+  cardNumber
 ) => {
   hardButton.addEventListener("click", () => {
     const difficult = 201;
@@ -15,8 +17,10 @@ export const hardButtonEvent = (
 
     randomNumber.push(number);
 
-    console.log("hard >>>", randomNumber);
+    cardNumber.classList.remove("cardNumber");
+    cardNumber.classList.add("cardNumberClosed");
 
+    app.appendChild(cardNumber);
     app.appendChild(inputContainer);
     app.appendChild(startButton);
 
@@ -24,5 +28,7 @@ export const hardButtonEvent = (
     difficultButtonsContainer.removeChild(mediumButton);
     difficultButtonsContainer.removeChild(hardButton);
     app.removeChild(subTitle);
+
+    input.focus();
   });
 };
