@@ -15,8 +15,7 @@ export const gameOver = (
   }
 
   if (chances.length === 0) {
-    resolution.innerText =
-      "Você Perdeu! Clique no botão iniciar para recomeçar!";
+    resolution.innerText = `Você Perdeu! O número correto era: ${randomNumber} \n Clique no botão iniciar para recomeçar!`;
 
     app.removeChild(startButton);
     app.removeChild(inputContainer);

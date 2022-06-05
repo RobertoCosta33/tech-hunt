@@ -73,3 +73,8 @@
   width: 400px;
   padding: 10px 16px;
 }
+
+.span {
+  color: var(--error3);
+  font-style: italic;
+}
