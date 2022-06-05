@@ -35,6 +35,11 @@
   max-width: 920px;
 }
 
+.title {
+  font-size: 3rem;
+  margin: 24px;
+}
+
 .container {
   margin-top: 48px;
   display: flex;
@@ -68,6 +73,7 @@
 
 .inputsLogin {
   margin-bottom: 16px;
+  border: 1px solid #000;
   font-size: 0.9rem;
   text-align: center;
   width: 400px;
@@ -77,4 +83,29 @@
 .span {
   color: var(--error3);
   font-style: italic;
+}
+
+@media (max-width: 480px) {
+  #root {
+    margin: 48px auto;
+    width: 248px;
+  }
+
+  .title {
+    text-align: center;
+    font-size: 2rem;
+    margin: 24px;
+  }
+
+  .container {
+    width: 216px;
+  }
+
+  .loginButton {
+    width: 216px;
+  }
+
+  .inputsLogin {
+    width: 216px;
+  }
 }

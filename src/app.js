@@ -10,7 +10,6 @@ export const app = () => {
   const labelPassword = document.createElement("label");
   const inputPassword = document.createElement("input");
   const loginButton = document.createElement("button");
-  // const spanName = document.createElement("span");
   const spanPassword = document.createElement("span");
 
   loginTitle.innerText = "Página de login";
@@ -31,14 +30,12 @@ export const app = () => {
   labelPassword.classList.add("loginLabels");
   inputName.classList.add("inputsLogin");
   inputPassword.classList.add("inputsLogin");
-  // spanName.classList.add("span");
   spanPassword.classList.add("span");
 
   app.appendChild(loginTitle);
   app.appendChild(container);
   container.appendChild(labelName);
   container.appendChild(inputName);
-  // container.appendChild(spanName);
   container.appendChild(labelPassword);
   container.appendChild(inputPassword);
   container.appendChild(spanPassword);
