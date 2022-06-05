@@ -1,0 +1,15 @@
+footer {
+  width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  text-align: center;
+  font-size: 1.1rem;
+  font-style: italic;
+}

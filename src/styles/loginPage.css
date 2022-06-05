@@ -30,7 +30,7 @@
   justify-content: baseline;
   flex-wrap: wrap;
   text-align: center;
-  margin: 76px 25%;
+  margin: 76px auto;
   padding: 16px;
   max-width: 920px;
 }
