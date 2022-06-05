@@ -2,6 +2,12 @@ import { SetInnerTexts } from "./SetInnerTexts.js";
 import { isEquals } from "../useCases/isEquals.js";
 import { gameOver } from "../useCases/gameOver.js";
 import { notANumber } from "../useCases/notANumber.js";
+import { easyHover } from "../events/easyEnter.js";
+import { easyOver } from "../events/easyOut.js";
+import { mediumHover } from "../events/mediumEnter.js";
+import { mediumOver } from "../events/mediumOut.js";
+import { hardHover } from "../events/hardEnter.js";
+import { hardOver } from "../events/hardOut.js";
 import {
   easyButtonEvent,
   mediumButtonEvent,
@@ -25,6 +31,15 @@ export const AppendChilds = () => {
 
   const randomNumber = [];
   const chances = [1, 2, 3];
+
+  easyHover(easyButton);
+  easyOver(easyButton);
+
+  mediumHover(mediumButton);
+  mediumOver(mediumButton);
+
+  hardHover(hardButton);
+  hardOver(hardButton);
 
   easyButtonEvent(
     easyButton,
