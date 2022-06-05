@@ -8,7 +8,7 @@ export const gameOver = (
   app,
   startButton,
   restartButton,
-  inputContainer,
+  inputContainer
 ) => {
   if (!value === randomNumber) {
     chances.pop();
@@ -22,7 +22,6 @@ export const gameOver = (
     app.removeChild(inputContainer);
 
     restartButton.addEventListener("click", () => {
-      // document.location.reload(true);
       AppendChilds();
       app.removeChild(resolution);
       app.removeChild(restartButton);

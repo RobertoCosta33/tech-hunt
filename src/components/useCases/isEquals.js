@@ -26,7 +26,6 @@ export const isEquals = (
     app.removeChild(inputContainer);
 
     restartButton.addEventListener("click", () => {
-      // document.location.reload(true);
       AppendChilds();
       app.removeChild(resolution);
       app.removeChild(restartButton);
