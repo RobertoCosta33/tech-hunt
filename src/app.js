@@ -1,4 +1,4 @@
-import { AppendChilds } from "./components/createDom/AppendChilds.js";
+import { game } from "./pages/game.js";
 
 export const app = () => {
   const app = document.getElementById("root");
@@ -50,7 +50,7 @@ export const app = () => {
       app.appendChild(title);
 
       title.innerText = `Bem Vindo ${inputName.value}`;
-      AppendChilds();
+      game();
     } else {
       spanPassword.innerText = "O nome de usuário e senha são obrigatório";
     }

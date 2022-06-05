@@ -1,4 +1,4 @@
-import { AppendChilds } from "../createDom/AppendChilds.js";
+import { game } from "../../pages/game.js";
 
 export const isEquals = (
   value,
@@ -32,7 +32,7 @@ export const isEquals = (
     app.removeChild(inputContainer);
 
     restartButton.addEventListener("click", () => {
-      AppendChilds();
+      game();
       app.removeChild(cardNumber);
       app.removeChild(resolution);
       app.removeChild(restartButton);

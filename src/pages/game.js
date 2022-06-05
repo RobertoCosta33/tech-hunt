@@ -1,20 +1,20 @@
-import { SetInnerTexts } from "./SetInnerTexts.js";
-import { isEquals } from "../useCases/isEquals.js";
-import { gameOver } from "../useCases/gameOver.js";
-import { notANumber } from "../useCases/notANumber.js";
-import { easyHover } from "../events/easyEnter.js";
-import { easyOver } from "../events/easyOut.js";
-import { mediumHover } from "../events/mediumEnter.js";
-import { mediumOver } from "../events/mediumOut.js";
-import { hardHover } from "../events/hardEnter.js";
-import { hardOver } from "../events/hardOut.js";
+import { SetInnerTexts } from "../components/createGameElements/SetInnerTexts.js";
+import { isEquals } from "../components/useCases/isEquals.js";
+import { gameOver } from "../components/useCases/gameOver.js";
+import { notANumber } from "../components/useCases/notANumber.js";
+import { easyHover } from "../components/events/easyEnter.js";
+import { easyOver } from "../components/events/easyOut.js";
+import { mediumHover } from "../components/events/mediumEnter.js";
+import { mediumOver } from "../components/events/mediumOut.js";
+import { hardHover } from "../components/events/hardEnter.js";
+import { hardOver } from "../components/events/hardOut.js";
 import {
   easyButtonEvent,
   mediumButtonEvent,
   hardButtonEvent,
-} from "../events/index.js";
+} from "../components/events/index.js";
 
-export const AppendChilds = () => {
+export const game = () => {
   const app = document.getElementById("root");
   const subTitle = SetInnerTexts().subTitle;
   const cardNumber = SetInnerTexts().cardNumber;
