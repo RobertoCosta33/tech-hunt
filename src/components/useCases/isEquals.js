@@ -13,14 +13,14 @@ export const isEquals = (
 ) => {
   const win = value === randomNumber;
   const message =
-    value > randomNumber ? "O número é menor!" : "O número é maior!";
+    value > randomNumber ? "O número é menor." : "O número é maior.";
 
   if (win) {
     resolution.classList.remove("resolutionLoose");
     resolution.classList.add("resolution");
 
     resolution.innerText =
-      `Parabéns! Você adivinhou o número correto! \n Clique no botão iniciar para recomeçar! \n O número correto é: `;
+      `Parabéns! Você adivinhou o número correto. \n Clique no botão iniciar para recomeçar! \n O número correto é: `;
 
     cardNumber.innerText = randomNumber;
     cardNumber.classList.remove("cardNumberClosed");
@@ -40,6 +40,6 @@ export const isEquals = (
   } else {
     chances.pop();
     resolution.classList.add("resolutionLoose");
-    resolution.innerText = `Resposta errada! ${message}  Você ainda tem ${chances.length} chances!`;
+    resolution.innerText = `Resposta errada. ${message}  Você ainda tem ${chances.length} chances.`;
   }
 };

@@ -52,7 +52,7 @@ export const app = () => {
       title.innerText = `Bem Vindo ${inputName.value}`;
       AppendChilds();
     } else {
-      spanPassword.innerText = "O nome de usuário e senha são obrigatório!";
+      spanPassword.innerText = "O nome de usuário e senha são obrigatório";
     }
   });
 };

@@ -14,7 +14,7 @@ export const SetInnerTexts = () => {
   const resolution = SetAttributes().resolution;
   const restartButton = SetAttributes().restartButton;
 
-  subTitle.innerText = "Escolha a dificuldade para começar o jogo!";
+  subTitle.innerText = "Escolha a dificuldade para começar o jogo";
   inputLabel.innerText = "Palpite: ";
   startButton.innerText = "Começar";
   easyButton.innerText = "Fácil";
