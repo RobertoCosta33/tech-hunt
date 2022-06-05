@@ -13,3 +13,26 @@ footer p {
   font-size: 1.1rem;
   font-style: italic;
 }
+
+.socials {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  margin: 8px;
+}
+
+.image {
+  width: 48px;
+  height: 48px;
+}
+
+@media (max-width: 480px) {
+  footer {
+    margin: 48px auto;
+    width: 248px;
+  }
+}
