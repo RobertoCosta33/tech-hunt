@@ -54,7 +54,7 @@ export const login = () => {
       title.innerText = `Bem Vindo ${inputName.value}`;
       game();
     } else {
-      spanPassword.innerText = "O nome de usuário e senha são obrigatório";
+      spanPassword.innerText = "O nome de usuário e senha são obrigatórios";
     }
   });
 };
