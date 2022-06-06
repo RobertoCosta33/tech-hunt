@@ -1,38 +1,29 @@
-import { game } from "./game.js";
+import { SetLoginInnerTexts } from "../components/createLoginElements/setLoginInnerTexts.js";
+import { loginButtonEvent } from "../events/loginEvents/logginButtonEvent.js";
 
 export const login = () => {
-  const app = document.getElementById("root");
-  const loginTitle = document.createElement("h1");
-  const title = document.createElement("h1");
-  const container = document.createElement("div");
-  const labelName = document.createElement("label");
-  const inputName = document.createElement("input");
-  const labelPassword = document.createElement("label");
-  const inputPassword = document.createElement("input");
-  const loginButton = document.createElement("button");
-  const spanPassword = document.createElement("span");
+  const app = SetLoginInnerTexts().app;
+  const loginTitle = SetLoginInnerTexts().loginTitle;
+  const title = SetLoginInnerTexts().title;
+  const container = SetLoginInnerTexts().container;
+  const labelName = SetLoginInnerTexts().labelName;
+  const inputName = SetLoginInnerTexts().inputName;
+  const labelPassword = SetLoginInnerTexts().labelPassword;
+  const inputPassword = SetLoginInnerTexts().inputPassword;
+  const loginButton = SetLoginInnerTexts().loginButton;
+  const spanPassword = SetLoginInnerTexts().spanPassword;
 
-  loginTitle.innerText = "Página de login";
-  loginButton.innerText = "Sing in";
-  labelName.innerText = "*Nome:";
-  labelPassword.innerText = "*Senha:";
-
-  inputName.placeholder = "Fulano Sicrano";
-  inputPassword.placeholder = "Fulano123#";
-
-  app.classList.remove("root");
-
-  app.classList.add("rootLogin");
-  title.classList.add("title");
-  container.classList.add("container");
-  loginButton.classList.add("loginButton");
-  labelName.classList.add("loginLabels");
-  labelPassword.classList.add("loginLabels");
-  inputName.classList.add("inputsLogin");
-  inputPassword.classList.add("inputsLogin");
-  spanPassword.classList.add("span");
-
-  inputPassword.setAttribute("type", "password");
+  loginButton.addEventListener("click", () => {
+    loginButtonEvent(
+      inputName.value,
+      inputPassword.value,
+      app,
+      loginTitle,
+      container,
+      title,
+      spanPassword
+    );
+  });
 
   app.appendChild(loginTitle);
   app.appendChild(container);
@@ -44,19 +35,4 @@ export const login = () => {
   container.appendChild(loginButton);
 
   inputName.focus();
-
-  loginButton.addEventListener("click", () => {
-    if (inputName.value != "" && inputPassword.value != "") {
-      app.classList.add("root");
-      app.removeChild(loginTitle);
-      app.removeChild(container);
-
-      app.appendChild(title);
-
-      title.innerText = `Bem Vindo ${inputName.value}`;
-      game();
-    } else {
-      spanPassword.innerText = "O nome de usuário e senha são obrigatórios";
-    }
-  });
 };

@@ -2,15 +2,15 @@ import { SetGameInnerTexts } from "../components/createGameDom/SetGameInnerTexts
 import { isEquals } from "../useCases/gameCases/isEquals.js";
 import { gameOver } from "../useCases/gameCases/gameOver.js";
 import { notANumber } from "../useCases/gameCases/notANumber.js";
-import { easyHover } from "../events/easyEnter.js";
-import { easyOver } from "../events/easyOut.js";
-import { mediumHover } from "../events/mediumEnter.js";
-import { mediumOver } from "../events/mediumOut.js";
-import { hardHover } from "../events/hardEnter.js";
-import { hardOver } from "../events/hardOut.js";
-import { easyButtonEvent } from "../events/easyButtonEvent.js";
-import { mediumButtonEvent } from "../events/mediumButtonEvent.js";
-import { hardButtonEvent } from "../events/hardButtonEvent.js";
+import { easyHover } from "../events/gameEvents/easyEnter.js";
+import { easyOver } from "../events/gameEvents/easyOut.js";
+import { mediumHover } from "../events/gameEvents/mediumEnter.js";
+import { mediumOver } from "../events/gameEvents/mediumOut.js";
+import { hardHover } from "../events/gameEvents/hardEnter.js";
+import { hardOver } from "../events/gameEvents/hardOut.js";
+import { easyButtonEvent } from "../events/gameEvents/easyButtonEvent.js";
+import { mediumButtonEvent } from "../events/gameEvents/mediumButtonEvent.js";
+import { hardButtonEvent } from "../events/gameEvents/hardButtonEvent.js";
 
 export const game = () => {
   const app = document.getElementById("root");
@@ -20,7 +20,8 @@ export const game = () => {
   const inputLabel = SetGameInnerTexts().inputLabel;
   const input = SetGameInnerTexts().input;
   const startButton = SetGameInnerTexts().startButton;
-  const difficultButtonsContainer = SetGameInnerTexts().difficultButtonsContainer;
+  const difficultButtonsContainer =
+    SetGameInnerTexts().difficultButtonsContainer;
   const easyButton = SetGameInnerTexts().easyButton;
   const mediumButton = SetGameInnerTexts().mediumButton;
   const hardButton = SetGameInnerTexts().hardButton;
