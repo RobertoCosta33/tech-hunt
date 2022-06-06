@@ -1,18 +1,18 @@
-import { CreateElements } from "./CreateElements.js";
+import { CreateGameElements } from "./CreateGameElements.js";
 
-export const SetAttributes = () => {
-  const subTitle = CreateElements().subTitle;
-  const cardNumber = CreateElements().cardNumber;
-  const inputContainer = CreateElements().inputContainer;
-  const input = CreateElements().input;
-  const inputLabel = CreateElements().inputLabel;
-  const startButton = CreateElements().startButton;
-  const easyButton = CreateElements().easyButton;
-  const mediumButton = CreateElements().mediumButton;
-  const hardButton = CreateElements().hardButton;
-  const difficultButtonsContainer = CreateElements().difficultButtonsContainer;
-  const resolution = CreateElements().resolution;
-  const restartButton = CreateElements().restartButton;
+export const SetGameAttributes = () => {
+  const subTitle = CreateGameElements().subTitle;
+  const cardNumber = CreateGameElements().cardNumber;
+  const inputContainer = CreateGameElements().inputContainer;
+  const input = CreateGameElements().input;
+  const inputLabel = CreateGameElements().inputLabel;
+  const startButton = CreateGameElements().startButton;
+  const easyButton = CreateGameElements().easyButton;
+  const mediumButton = CreateGameElements().mediumButton;
+  const hardButton = CreateGameElements().hardButton;
+  const difficultButtonsContainer = CreateGameElements().difficultButtonsContainer;
+  const resolution = CreateGameElements().resolution;
+  const restartButton = CreateGameElements().restartButton;
 
   subTitle.classList.add("subTitle");
 

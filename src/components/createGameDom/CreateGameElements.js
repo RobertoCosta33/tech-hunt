@@ -1,4 +1,4 @@
-export const CreateElements = () => {
+export const CreateGameElements = () => {
   const title = document.createElement("h1");
   const subTitle = document.createElement("h3");
   const cardNumber = document.createElement("div");

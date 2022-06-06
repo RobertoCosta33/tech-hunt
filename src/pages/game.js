@@ -1,33 +1,31 @@
-import { SetInnerTexts } from "../components/createGameElements/SetInnerTexts.js";
-import { isEquals } from "../useCases/isEquals.js";
-import { gameOver } from "../useCases/gameOver.js";
-import { notANumber } from "../useCases/notANumber.js";
+import { SetGameInnerTexts } from "../components/createGameDom/SetGameInnerTexts.js";
+import { isEquals } from "../useCases/gameCases/isEquals.js";
+import { gameOver } from "../useCases/gameCases/gameOver.js";
+import { notANumber } from "../useCases/gameCases/notANumber.js";
 import { easyHover } from "../events/easyEnter.js";
 import { easyOver } from "../events/easyOut.js";
 import { mediumHover } from "../events/mediumEnter.js";
 import { mediumOver } from "../events/mediumOut.js";
 import { hardHover } from "../events/hardEnter.js";
-import { hardOver } from "../events/hardOut.js"
-import {
-  easyButtonEvent,
-  mediumButtonEvent,
-  hardButtonEvent,
-} from "../events/index.js";
+import { hardOver } from "../events/hardOut.js";
+import { easyButtonEvent } from "../events/easyButtonEvent.js";
+import { mediumButtonEvent } from "../events/mediumButtonEvent.js";
+import { hardButtonEvent } from "../events/hardButtonEvent.js";
 
 export const game = () => {
   const app = document.getElementById("root");
-  const subTitle = SetInnerTexts().subTitle;
-  const cardNumber = SetInnerTexts().cardNumber;
-  const inputContainer = SetInnerTexts().inputContainer;
-  const inputLabel = SetInnerTexts().inputLabel;
-  const input = SetInnerTexts().input;
-  const startButton = SetInnerTexts().startButton;
-  const difficultButtonsContainer = SetInnerTexts().difficultButtonsContainer;
-  const easyButton = SetInnerTexts().easyButton;
-  const mediumButton = SetInnerTexts().mediumButton;
-  const hardButton = SetInnerTexts().hardButton;
-  const resolution = SetInnerTexts().resolution;
-  const restartButton = SetInnerTexts().restartButton;
+  const subTitle = SetGameInnerTexts().subTitle;
+  const cardNumber = SetGameInnerTexts().cardNumber;
+  const inputContainer = SetGameInnerTexts().inputContainer;
+  const inputLabel = SetGameInnerTexts().inputLabel;
+  const input = SetGameInnerTexts().input;
+  const startButton = SetGameInnerTexts().startButton;
+  const difficultButtonsContainer = SetGameInnerTexts().difficultButtonsContainer;
+  const easyButton = SetGameInnerTexts().easyButton;
+  const mediumButton = SetGameInnerTexts().mediumButton;
+  const hardButton = SetGameInnerTexts().hardButton;
+  const resolution = SetGameInnerTexts().resolution;
+  const restartButton = SetGameInnerTexts().restartButton;
 
   const randomNumber = [];
   const chances = [1, 2, 3];
