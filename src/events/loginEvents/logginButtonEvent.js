@@ -1,4 +1,5 @@
 import { game } from "../../pages/game.js";
+import { footerPage } from "../../pages/footer.js";
 
 export const loginButtonEvent = (
   name,
