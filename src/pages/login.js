@@ -1,4 +1,4 @@
-import { SetLoginInnerTexts } from "../components/createLoginElements/setLoginInnerTexts.js";
+import { SetLoginInnerTexts } from "../components/createLoginDom/setLoginInnerTexts.js";
 import { loginButtonEvent } from "../events/loginEvents/logginButtonEvent.js";
 
 export const login = () => {
