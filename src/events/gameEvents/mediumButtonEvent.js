@@ -17,8 +17,8 @@ export const mediumButtonEvent = (
 
     randomNumber.push(number);
 
-    cardNumber.classList.remove("cardNumber");
-    cardNumber.classList.add("cardNumberClosed");
+    cardNumber.classList.remove("card-number");
+    cardNumber.classList.add("card-number-closed");
 
     app.appendChild(cardNumber);
     app.appendChild(inputContainer);

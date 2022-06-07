@@ -9,7 +9,7 @@ export const SetFooterAttributes = () => {
   const githubIcon = CreateFooterElements().githubIcon;
 
   authorParagraphy.classList.add("author");
-  iconsContainer.classList.add("iconsContainer");
+  iconsContainer.classList.add("icons-container");
   linkedinIconAncor.setAttribute(
     "href",
     "https://www.linkedin.com/in/roberto-b-costa-000b91218/"

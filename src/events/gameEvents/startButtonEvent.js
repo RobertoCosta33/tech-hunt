@@ -1,4 +1,15 @@
-export const startButtonEvent = (startButton, value, randomNumber, resolution, app, chances, restartButton, notANumber, isEquals, gameOver) => {
+export const startButtonEvent = (
+  startButton,
+  value,
+  randomNumber,
+  resolution,
+  app,
+  chances,
+  restartButton,
+  notANumber,
+  isEquals,
+  gameOver
+) => {
   startButton.addEventListener("click", () => {
     notANumber(value, chances, resolution);
 

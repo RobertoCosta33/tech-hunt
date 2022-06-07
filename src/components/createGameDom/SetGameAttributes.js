@@ -14,9 +14,9 @@ export const SetGameAttributes = () => {
   const resolution = CreateGameElements().resolution;
   const restartButton = CreateGameElements().restartButton;
 
-  subTitle.classList.add("subTitle");
+  subTitle.classList.add("sub-title");
 
-  inputContainer.classList.add("inputContainer");
+  inputContainer.classList.add("input-container");
 
   inputLabel.setAttribute("for", "input");
   inputLabel.classList.add("labels");
@@ -26,18 +26,18 @@ export const SetGameAttributes = () => {
   input.setAttribute("type", "number");
 
   startButton.classList.add("buttons");
-  startButton.classList.add("startButton");
-  cardNumber.classList.add("cardNumber");
+  startButton.classList.add("start-button");
+  cardNumber.classList.add("card-number");
   difficultButtonsContainer.classList.add("difficultButtonsContainer");
   easyButton.classList.add("buttons");
-  easyButton.classList.add("easyButton");
+  easyButton.classList.add("easy-button");
   mediumButton.classList.add("buttons");
-  mediumButton.classList.add("mediumButton");
+  mediumButton.classList.add("medium-button");
   hardButton.classList.add("buttons");
-  hardButton.classList.add("hardButton");
+  hardButton.classList.add("hard-button");
   resolution.classList.add("resolution");
   restartButton.classList.add("buttons");
-  restartButton.classList.add("restartButton");
+  restartButton.classList.add("restart-button");
 
   return {
     inputLabel,

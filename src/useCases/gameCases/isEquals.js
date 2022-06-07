@@ -16,15 +16,15 @@ export const isEquals = (
     value > randomNumber ? "O número é menor." : "O número é maior.";
 
   if (win) {
-    resolution.classList.remove("resolutionLoose");
+    resolution.classList.remove("resolution-loose");
     resolution.classList.add("resolution");
 
     resolution.innerText =
       `Parabéns! Você adivinhou o número correto. \n Clique no botão iniciar para recomeçar! \n O número correto é: `;
 
     cardNumber.innerText = randomNumber;
-    cardNumber.classList.remove("cardNumberClosed");
-    cardNumber.classList.add("cardNumber");
+    cardNumber.classList.remove("card-number-closed");
+    cardNumber.classList.add("card-number");
 
     app.appendChild(cardNumber);
     app.removeChild(startButton);
@@ -39,7 +39,7 @@ export const isEquals = (
     });
   } else {
     chances.pop();
-    resolution.classList.add("resolutionLoose");
+    resolution.classList.add("resolution-loose");
     resolution.innerText = `Resposta errada. ${message}  Você ainda tem ${chances.length} chances.`;
   }
 };

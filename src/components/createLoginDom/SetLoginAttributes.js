@@ -14,14 +14,14 @@ export const SetLoginAttributes = () => {
 
   app.classList.remove("root");
 
-  app.classList.add("rootLogin");
+  app.classList.add("root-login");
   title.classList.add("title");
   container.classList.add("container");
-  loginButton.classList.add("loginButton");
-  labelName.classList.add("loginLabels");
-  labelPassword.classList.add("loginLabels");
-  inputName.classList.add("inputsLogin");
-  inputPassword.classList.add("inputsLogin");
+  loginButton.classList.add("login-button");
+  labelName.classList.add("login-labels");
+  labelPassword.classList.add("login-labels");
+  inputName.classList.add("inputs-login");
+  inputPassword.classList.add("inputs-login");
   spanPassword.classList.add("span");
 
   inputPassword.setAttribute("type", "password");

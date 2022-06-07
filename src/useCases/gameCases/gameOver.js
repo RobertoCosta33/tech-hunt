@@ -18,8 +18,8 @@ export const gameOver = (
   if (chances.length === 0) {
     resolution.innerText = `Você Perdeu! \n Clique no botão iniciar para recomeçar. \n O número correto era:`;
 
-    cardNumber.classList.remove("cardNumberClosed");
-    cardNumber.classList.add("cardNumber");
+    cardNumber.classList.remove("card-number-closed");
+    cardNumber.classList.add("card-number");
     cardNumber.innerText = randomNumber;
 
     app.appendChild(cardNumber);
