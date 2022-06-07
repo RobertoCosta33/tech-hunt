@@ -29,3 +29,10 @@ ion-icon:hover {
   height: 52px;
   box-shadow: 2px 2px 4px #1976d2;
 }
+
+@media (max-width: 480px) {
+  .iconsContainer {
+    margin: 48px auto;
+    width: 248px;
+  }
+}
