@@ -9,7 +9,6 @@ export const SetFooterAttributes = () => {
   const githubIcon = CreateFooterElements().githubIcon;
 
   authorParagraphy.classList.add("author");
-  footer.classList.add("footer");
   iconsContainer.classList.add("iconsContainer");
   linkedinIconAncor.setAttribute(
     "href",
