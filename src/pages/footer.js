@@ -1,22 +1,18 @@
 import { SetFooterInnerTexts } from "../components/createFooterDom/SetFooterInnerTexts.js";
 
 export const footerPage = () => {
-  const app = document.getElementById("footer");
-  const footer = SetFooterInnerTexts().footer;
+  const footer = document.getElementById("footer");
   const authorParagraphy = SetFooterInnerTexts().authorParagraphy;
-  const socialsContainer = SetFooterInnerTexts().socialsContainer;
-  const linkedinAdderess = SetFooterInnerTexts().linkedinAdderess;
-  const linkedinAncor = SetFooterInnerTexts().linkedinAncor;
-  const linkedinImage = SetFooterInnerTexts().linkedinImage;
-  const githubAdderess = SetFooterInnerTexts().githubAdderess;
-  const githubAncor = SetFooterInnerTexts().githubAncor;
-  const githubImage = SetFooterInnerTexts().githubImage;
-  
-  app.appendChild(footer);
+  const iconsContainer = SetFooterInnerTexts().iconsContainer;
+  const linkedinIconAncor = SetFooterInnerTexts().linkedinIconAncor;
+  const linkedinIcon = SetFooterInnerTexts().linkedinIcon;
+  const githubIconAncor = SetFooterInnerTexts().githubIconAncor;
+  const githubIcon = SetFooterInnerTexts().githubIcon;
+
+  footer.appendChild(iconsContainer);
+  iconsContainer.appendChild(linkedinIconAncor);
+  iconsContainer.appendChild(githubIconAncor);
+  linkedinIconAncor.appendChild(linkedinIcon);
+  githubIconAncor.appendChild(githubIcon);
   footer.appendChild(authorParagraphy);
-  socialsContainer.appendChild(linkedinAdderess);
-  linkedinAncor.appendChild(linkedinImage);
-  socialsContainer.appendChild(githubAdderess);
-  githubAncor.appendChild(githubImage);
-  footer.appendChild(socialsContainer);
 };

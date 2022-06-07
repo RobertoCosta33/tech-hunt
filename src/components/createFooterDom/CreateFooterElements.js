@@ -1,23 +1,17 @@
 export const CreateFooterElements = () => {
-  const footer = document.createElement("footer");
   const authorParagraphy = document.createElement("p");
-  const socialsContainer = document.createElement("div");
-  const linkedinAdderess = document.createElement("div");
-  const linkedinAncor = document.createElement("a");
-  const linkedinImage = document.createElement("img");
-  const githubAdderess = document.createElement("div");
-  const githubAncor = document.createElement("a");
-  const githubImage = document.createElement("img");
+  const iconsContainer = document.createElement("div");
+  const linkedinIconAncor = document.createElement("a");
+  const linkedinIcon = document.createElement("ion-icon");
+  const githubIconAncor = document.createElement("a");
+  const githubIcon = document.createElement("ion-icon");
 
   return {
-    footer,
     authorParagraphy,
-    socialsContainer,
-    linkedinAdderess,
-    linkedinAncor,
-    linkedinImage,
-    githubAdderess,
-    githubAncor,
-    githubImage,
+    iconsContainer,
+    linkedinIconAncor,
+    linkedinIcon,
+    githubIconAncor,
+    githubIcon,
   };
 };
